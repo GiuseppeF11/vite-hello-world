@@ -2,7 +2,7 @@
 export default {
   data() {
     return { 
-      contents: 'Questo è un dato preso da AppHeader'
+      contents: 'Questo è un dato preso da AppMain'
     };
   },
 };
@@ -18,8 +18,8 @@ export default {
 
 <style scoped>
   h1 {
-    background-color: aquamarine;
-    color: lightcoral;
+    background-color: rgb(199, 168, 68);
+    color: rgb(164, 21, 21);
     text-align: center;
   }
 

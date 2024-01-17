@@ -8,17 +8,21 @@
 
 //1)
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
   data() {
     return { 
-      count: 0 
+      content: 'Questo è un dato preso da AppVue'
     };
   },
   
   //2) Dichiarazione dei componenti
   components: {
-    AppHeader
+    AppHeader,
+    AppMain,
+    AppFooter,
   }
 }
 </script>
@@ -27,9 +31,17 @@ export default {
   <div>
     <!-- 3) Utilizzo del componente -->
       <AppHeader/>
+      <AppMain/>
+      <AppFooter/>
+      <h1>
+        {{ content }}
+      </h1>
   </div>
 </template>
 
 <style scoped>
-
+  h1 {
+    background-color: red;
+    text-align: center;
+  }
 </style>
